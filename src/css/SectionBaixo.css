@@ -1,0 +1,251 @@
+
+
+
+body{
+  overflow: hidden;
+  background: rgba(17, 17, 17); /*É PRA SER NEGRO SOLIDO. plano de fundo*/
+  color: white !important; 
+}
+
+
+/*CONFIGURANDO AS OPSOES*/
+
+.Questoes_dado{
+    display: flex;
+   /* position: absolute; /*alinha em baixo */
+    z-index: +3;
+    bottom: 0;
+    
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.488) 0%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 100%);
+  
+    background: linear-gradient(2deg, rgba(0,0,0,1) 20%, rgba(22, 22, 22, 0.1) 100%);
+    
+    padding-right: calc(40% + 6px); /*toma toda a parte de baixo - as bordas */
+  
+    border-bottom: 5px;
+    border: 3px rgb(255, 255, 255) ; /*ajusta a borda*/
+    border-right: 0;
+    border-style: solid; /*da estilo a borda*/
+
+    
+  }
+  
+  .questoes{
+    display: flex;
+    margin-left: 20px;
+    padding-top: 10px; /*alinha em cima*/
+    width: 100%;
+    height: 100%;
+  
+  }
+  .questoes p{
+    padding: 5px;
+    color: white;
+    margin-bottom: 10px;
+    padding-right: 35vh;
+    font-size: 17px;
+  }
+  
+  .questoes_esquerda{
+    padding-right: 60px;
+  }
+  
+  
+  .select_1, .botao_dado{
+    cursor: pointer;/*maosinha ao se aprosimar do botao*/
+  }
+  /*CONFIGURANDO OS DADO*/
+
+  
+  
+  .dado{
+      
+      padding-top: 3vh;
+      padding-left: 15vh;
+      padding-bottom: 20px;
+  
+      font-size: 20px;
+      display: block;
+      position: fixed;
+      right: 0;
+      width: 33vw;
+      margin: 0;
+      color: aliceblue;
+
+      border: 0;
+      border-left: 4px rgb(255, 255, 255) ; /*ajusta a borda*/
+      border-style: solid; /*da estilo a borda*/
+      
+      height: 100%;
+  }
+
+  .dado p{
+    white-space: nowrap;
+    padding-bottom: 10px;
+  }
+  .resposta{
+    color: red;
+    font-size: 22px;
+  }
+  
+  .botao_dado{
+    white-space: nowrap;
+    margin-left: 10vh;
+    padding: 10px;
+    font-size: 22px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 20px;
+    border: 2px rgb(255, 255, 255) solid;
+    color: white;
+  }
+
+  .nomeDados{
+    z-index: 10;
+  }
+  
+
+
+
+
+
+
+  
+
+
+
+
+  
+  @media screen and (max-width: 750px) {
+
+    .Questoes_dado{
+      bottom: 0;
+      padding-right: 0; 
+      border-bottom: 2px;
+      border: 1px rgb(255, 255, 255) solid ; /*ajusta a borda*/
+  
+      
+    }
+    .questoes{
+
+      opacity: 0; /*//////////////////////////////////////////////////////////////////////////////
+      /////////////////////////////////////////////////////////////////////////////////////////////////*/
+      
+      display: flex;
+      margin-left: 5px;
+      padding-top: 5px; /*alinha em cima*/
+      width: 100vw;
+    
+    }
+    .questoes p{
+      padding: 0;
+      color: white;
+      margin-bottom: 10px;
+      padding-right: 40vw;
+      font-size: 17px;
+    }
+    
+    .questoes_esquerda{
+      padding-right: 0px;
+    }
+
+
+    .dado{
+      
+      padding-top: 20px;
+      padding-left: 10px;
+      padding-bottom: 10px;
+  
+      position: absolute;
+      left: 0;
+      border-left: 0;
+  }
+  
+  .botao_dado{
+    white-space: nowrap;
+    margin-left: 15vh;
+    padding: 5px;
+    font-size: 20px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 10px;
+    border: 0.5px rgb(255, 255, 255) solid;
+    color: white;
+  }
+
+
+  }
+
+
+
+
+
+
+
+
+  @media screen and (min-width: 751px) and (max-width: 999px) {
+
+    .Questoes_dado{
+      display: flex;
+     /* position: absolute; /*alinha em baixo */
+      z-index: +3;
+      bottom: 0;
+      
+      border-bottom: 5px;
+      border: 3px rgb(255, 255, 255) ; /*ajusta a borda*/
+      border-right: 0;
+      border-style: solid; /*da estilo a borda*/
+      
+    }
+    .questoes{
+      opacity: 30;
+      width: 40vh;
+      margin-left: 5px;
+      padding-top: 5px; /*alinha em cima*/
+    
+    }
+    .questoes p{
+      padding: 5px;
+      margin-bottom: 10px;
+      padding-right: 25vw;
+      font-size: 2.5vw;
+    }
+    
+    .select_1, .botao_dado{
+      cursor: pointer;/*maosinha ao se aprosimar do botao*/
+    }
+    /*CONFIGURANDO OS DADO*/
+ 
+    .questoes_esquerda{
+      padding-right: 0px;
+    }
+
+    
+    .dado{
+
+      padding-top: 20px;
+      padding-left: 10px;
+
+
+        position: absolute;
+        right: 0;
+        left: auto;
+        width: 33vw;
+        margin-right: 15vw;
+        color: aliceblue;
+
+  
+        border: 0;
+        border-left: 4px rgb(255, 255, 255) ; /*ajusta a borda*/
+        border-style: solid; /*da estilo a borda*/
+
+    }
+    
+    .botao_dado{
+      font-size: 22px;
+      margin-left: 5vh;
+      background-color: rgb(255, 0, 0);
+      border-radius: 20px;
+      border: 3px rgb(255, 255, 255) solid;
+    }
+  }
+
