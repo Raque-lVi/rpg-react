@@ -6,7 +6,7 @@ import Cenario from './script/componentes/cenario'
 import LiMenu from './script/componentes/liMenu'
 import Para from './script/componentes/Parag'
 import Questoes_dado from './script/componentes/Questoes_dado'
-/*import cen from './img/cenario/cn_grande_bunker.jpg'*/
+
 import Mulher from './img/icon_mulher.png'
 import Bolsa from './img/icon_bolsa-de-livro-escolar.png'
 import Compras from './img/icon_mosca.png'
@@ -21,52 +21,132 @@ var CenariosD = [
     {
         src: 'https://github.com/Raque-lVi/rpg-react/blob/master/src/img/cenario/cn_grande_bunker.jpg?raw=true',
         nome: 'Grande Bunker',
-        lugar: 1
+        lugar: 1,
+        p1: "Seguir",
+        p2: "Desista do futuro",
+        p3: "",
+        p5: "",
+        p6: "",
+        p7: "",
+        momento: "",
+        texto: "",
     },
     {
         src: 'https://github.com/Raque-lVi/rpg-react/blob/master/src/img/cenario/cn_gameOver.jpg?raw=true',
         nome: 'Game Over',
-        lugar: 0
+        lugar: 0,
+        p1: "Tentar Novamente",
+        p2: "",
+        p3: "",
+        p5: "",
+        p6: "",
+        p7: "",
+        momento: "",
+        texto: "",
     },
     {
         src: 'https://github.com/Raque-lVi/rpg-react/blob/master/src/img/cenario/cn_escada.jpg?raw=true',
         nome: 'Escada',
-        lugar: 2
+        lugar: 2,
+        p1: "Seguir",
+        p2: "Voltar",
+        p3: "",
+        p5: "",
+        p6: "",
+        p7: "",
+        momento: "",
+        texto: "",
     },
     {
         src: 'https://github.com/Raque-lVi/rpg-react/blob/master/src/img/cenario/cn_rua.jpg?raw=true',
         nome: 'Rua escura',
-        lugar: 3
+        lugar: 3,
+        p1: "Seguir",
+        p2: "Voltar",
+        p3: "",
+        p5: "",
+        p6: "",
+        p7: "",
+        momento: "",
+        texto: "",
     },
     {
         src: 'https://github.com/Raque-lVi/rpg-react/blob/master/src/img/cenario/cn_casaVelha.jpg?raw=true',
         nome: 'Casa Assombrada de longe',
-        lugar: 4
+        lugar: 4,
+        p1: "Seguir",
+        p2: "Voltar",
+        p3: "",
+        p5: "",
+        p6: "",
+        p7: "",
+        momento: "",
+        texto: "",
     },
     {
         src: 'https://github.com/Raque-lVi/rpg-react/blob/master/src/img/cenario/cn_porta.jpg?raw=true',
         nome: 'Porta',
-        lugar: 5
+        lugar: 5,
+        p1: "Seguir",
+        p2: "Voltar",
+        p3: "",
+        p5: "",
+        p6: "",
+        p7: "",
+        momento: "",
+        texto: "",
     },
     {
         src: 'https://github.com/Raque-lVi/rpg-react/blob/master/src/img/cenario/casa_abandonadaDentro.jpg?raw=true',
         nome: 'Casa abandonada por dentro',
-        lugar: 6
+        lugar: 6,
+        p1: "Seguir",
+        p2: "Voltar",
+        p3: "",
+        p5: "",
+        p6: "",
+        p7: "",
+        momento: "",
+        texto: "",
     },
     {
         src: 'https://github.com/Raque-lVi/rpg-react/blob/master/src/img/cenario/cn_floresta_neblina.jpg?raw=true',
         nome: 'Floresta Nebulosa',
-        lugar: 7
+        lugar: 7,
+        p1: "Seguir",
+        p2: "Voltar",
+        p3: "",
+        p5: "",
+        p6: "",
+        p7: "",
+        momento: "",
+        texto: "",
     },
     {
         src: 'https://github.com/Raque-lVi/rpg-react/blob/master/src/img/cenario/cn_igreja_dentro.jpg?raw=true',
         nome: 'Igreja Dentro',
-        lugar: 8
+        lugar: 8,
+        p1: "Seguir",
+        p2: "Voltar",
+        p3: "",
+        p5: "",
+        p6: "",
+        p7: "",
+        momento: "",
+        texto: "",
     },
     {
         src: 'https://github.com/Raque-lVi/rpg-react/blob/master/src/img/cenario/cn_antigo_bunker.jpg?raw=true',
         nome: 'Antigo Bunke',
-        lugar: 9
+        lugar: 9,
+        p1: "Seguir",
+        p2: "Voltar",
+        p3: "",
+        p5: "",
+        p6: "",
+        p7: "",
+        momento: "",
+        texto: "",
     },
         //tem de colocar muito mais depois como por exemplo o laboratorio com placas dos seus
         //"pacientes" (duplicatas), a rosa com a carta diferente, e o gato e sua adoção.
@@ -79,7 +159,7 @@ function App() {
 
     <div className="cenarios">
 
-      <Cenario objeto = {CenariosD}/*{cen}*/ /> 
+      <Cenario /> 
 
       <main className ="containe" id="conteine_index">
             

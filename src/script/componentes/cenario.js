@@ -5,7 +5,7 @@ export default function cenario (props){
             
             {console.log(props.src)}
 
-            <img id="cenarioFundo" className="cenarioFundo" src = {props.src} />
+            <img id="cenarioFundo" className="cenarioFundo" src = "https://github.com/Raque-lVi/rpg-react/blob/master/src/img/cenario/cn_grande_bunker.jpg?raw=true" />
             
         </div>
     );
